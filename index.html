@@ -1,165 +1,104 @@
 <!DOCTYPE html>
-<html lang="mn" data-bs-theme="light">
+<html lang="mn" data-bs-theme="dark">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Фото цомог - Bootstrap</title>
-<meta name="description" content="Bootstrap 5-аар хийсэн фото цомгийн хуудас.">
-<script>document.documentElement.setAttribute('data-bs-theme',localStorage.getItem('lab8-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))</script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<link href="brand.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHub - Bootstrap Lab 8</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- brand.css холбох -->
+    <link href="brand.css" rel="stylesheet">
 </head>
-<body>
-<nav class="navbar navbar-expand-md bg-body-tertiary border-bottom sticky-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">📷 Фото цомог</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Цэс нээх">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item"><a class="nav-link active" href="#gallery">Цомог</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Сэтгэгдэл</a></li>
-      </ul>
-      <button id="themeBtn" class="btn btn-outline-secondary btn-sm" type="button">🌙 Dark</button>
-    </div>
-  </div>
-</nav>
+<body class="bg-body text-body">
 
-<header class="py-5 text-center">
-  <div class="container">
-    <h1 class="display-5 fw-bold">Миний фото цомог</h1>
-    <p class="lead text-body-secondary">Энэ жилийн дуртай зургууд нэг дор.</p>
-    <a class="btn btn-brand btn-lg" href="#gallery">Зургуудыг үзэх</a>
-  </div>
-</header>
-
-<main class="container pb-5">
-  <section id="gallery" class="mb-5">
-    <h2 class="h4 mb-3">Зургууд</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <img src="https://picsum.photos/seed/lab8-1/600/400" class="card-img-top h-auto" width="600" height="400" loading="lazy" alt="Хангайн өглөө">
-          <div class="card-body">
-            <h3 class="card-title h5">Хангайн өглөө</h3>
-            <p class="card-text text-body-secondary">Нар мандахын өмнөх тайван өглөө.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <small class="text-body-secondary">2026.07.12</small>
-            <button class="btn btn-brand btn-sm" type="button">Харах</button>
-          </div>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <img src="https://picsum.photos/seed/lab8-2/600/400" class="card-img-top h-auto" width="600" height="400" loading="lazy" alt="Говийн шөнө">
-          <div class="card-body">
-            <h3 class="card-title h5">Говийн шөнө</h3>
-            <p class="card-text text-body-secondary">Од дүүрсэн тэнгэр, чимээгүй элсэн манхан.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <small class="text-body-secondary">2026.08.03</small>
-            <button class="btn btn-brand btn-sm" type="button">Харах</button>
-          </div>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <img src="https://picsum.photos/seed/lab8-3/600/400" class="card-img-top h-auto" width="600" height="400" loading="lazy" alt="Хөвсгөл нуур">
-          <div class="card-body">
-            <h3 class="card-title h5">Хөвсгөл нуур</h3>
-            <p class="card-text text-body-secondary">Цэнхэр усны эрэг дээрх амралтын өдөр.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <small class="text-body-secondary">2026.08.15</small>
-            <button class="btn btn-brand btn-sm" type="button">Харах</button>
-          </div>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <img src="https://picsum.photos/seed/lab8-4/600/400" class="card-img-top h-auto" width="600" height="400" loading="lazy" alt="Хотын гэрэл">
-          <div class="card-body">
-            <h3 class="card-title h5">Хотын гэрэл</h3>
-            <p class="card-text text-body-secondary">Улаанбаатарын үдшийн гудамж.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <small class="text-body-secondary">2026.09.02</small>
-            <button class="btn btn-brand btn-sm" type="button">Харах</button>
-          </div>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <img src="https://picsum.photos/seed/lab8-5/600/400" class="card-img-top h-auto" width="600" height="400" loading="lazy" alt="Намрын Тэрэлж">
-          <div class="card-body">
-            <h3 class="card-title h5">Намрын Тэрэлж</h3>
-            <p class="card-text text-body-secondary">Шар навчисаар бүрхэгдсэн ой.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <small class="text-body-secondary">2026.09.28</small>
-            <button class="btn btn-brand btn-sm" type="button">Харах</button>
-          </div>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <img src="https://picsum.photos/seed/lab8-6/600/400" class="card-img-top h-auto" width="600" height="400" loading="lazy" alt="Цасан өглөө">
-          <div class="card-body">
-            <h3 class="card-title h5">Цасан өглөө</h3>
-            <p class="card-text text-body-secondary">Анхны цас орсон хашаа.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <small class="text-body-secondary">2026.10.20</small>
-            <button class="btn btn-brand btn-sm" type="button">Харах</button>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="row justify-content-center">
-    <div class="col-lg-6">
-      <h2 class="h4 mb-3">Сэтгэгдэл үлдээх</h2>
-      <form id="form" class="needs-validation" novalidate>
-        <div class="mb-3">
-          <label for="name" class="form-label">Нэр</label>
-          <input id="name" class="form-control" required minlength="2" autocomplete="name">
-          <div class="invalid-feedback">Нэрээ дор хаяж 2 тэмдэгтээр бичнэ үү.</div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-brand" href="#">EduHub Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link active" href="#">Нүүр</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Хичээлүүд</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Холбоо барих</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Имэйл</label>
-          <input id="email" type="email" class="form-control" required autocomplete="email">
-          <div class="invalid-feedback">Зөв имэйл хаяг оруулна уу.</div>
-        </div>
-        <div class="mb-3">
-          <label for="msg" class="form-label">Сэтгэгдэл</label>
-          <textarea id="msg" class="form-control" rows="3" required minlength="10"></textarea>
-          <div class="invalid-feedback">Сэтгэгдэл дор хаяж 10 тэмдэгттэй байна.</div>
-        </div>
-        <button class="btn btn-brand" type="submit">Илгээх</button>
-      </form>
-      <div id="ok" class="alert alert-success mt-3 d-none" role="status">Баярлалаа! Сэтгэгдэл илгээгдлээ.</div>
-    </div>
-  </section>
-</main>
+    </nav>
 
-<footer class="border-top py-3 text-center text-body-secondary small">&copy; 2026 Лаб 8 - Bootstrap</footer>
+    <!-- Main Content & Card Grid (3 баганатай) -->
+    <main class="container my-5">
+        <h2 class="mb-4 text-center fw-bold">EduHub 4 Үндсэн Хичээл (Bootstrap Grid)</h2>
+        
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 bg-dark text-light border-secondary shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-brand">HTML5 & CSS3</h5>
+                        <p class="card-text">Семантик вэб дизайн, орчин үеийн Flexbox болон Grid байрлалууд.</p>
+                        <a href="#" class="btn btn-brand mt-3">Үзэх</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 bg-dark text-light border-secondary shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-brand">Python Science</h5>
+                        <p class="card-text">Өгөгдөл боловсруулах, шинжлэх ухааны тооцоолол хийх алгоритмууд.</p>
+                        <a href="#" class="btn btn-brand mt-3">Үзэх</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 bg-dark text-light border-secondary shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-brand">ESP32 IoT Systems</h5>
+                        <p class="card-text">Микроконтроллер, мэдрүүлэгч холбох болон IoT автоматжуулалт.</p>
+                        <a href="#" class="btn btn-brand mt-3">Үзэх</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script>
-const root=document.documentElement, btn=document.getElementById('themeBtn');
-const paint=()=>btn.textContent=root.getAttribute('data-bs-theme')==='dark'?'☀️ Light':'🌙 Dark';
-btn.onclick=()=>{const t=root.getAttribute('data-bs-theme')==='dark'?'light':'dark';root.setAttribute('data-bs-theme',t);localStorage.setItem('lab8-theme',t);paint()};
-paint();
-const f=document.getElementById('form');
-f.addEventListener('submit',e=>{
-  e.preventDefault();
-  if(!f.checkValidity()){e.stopPropagation();f.classList.add('was-validated');return}
-  f.classList.remove('was-validated');f.reset();
-  document.getElementById('ok').classList.remove('d-none');
-});
-</script>
+        <!-- Form Validation Section -->
+        <section class="mt-5 p-4 border rounded border-secondary bg-dark">
+            <h3 class="mb-3">Бүртгүүлэх Хүсэлт</h3>
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label class="form-label">Нэр</label>
+                    <input type="text" class="form-control" required>
+                    <div class="invalid-feedback">Нэрээ оруулна уу.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Имэйл хаяг</label>
+                    <input type="email" class="form-control" required>
+                    <div class="invalid-feedback">Зөв имэйл оруулна уу.</div>
+                </div>
+                <button type="submit" class="btn btn-brand">Илгээх</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 </body>
 </html>

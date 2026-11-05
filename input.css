@@ -1,10 +1,7 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Dark mode: <html data-theme="dark"> байхад dark: variant ажиллана */
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
-
-/* Brand өнгө: --color-brand нь bg-brand, text-brand, border-brand классуудыг үүсгэнэ */
 @theme {
-  --color-brand: #7e22ce;
-  --color-brand-dark: #581c87;
+  --color-brand: #a855f7;
 }

@@ -1,21 +1,18 @@
-/* Brand өнгө: CSS хувьсагч + Bootstrap-ийн --bs-btn-* хувьсагчид холбосон */
 :root {
-  --brand: #7e22ce;
-  --brand-dark: #581c87;
+  --color-brand: #a855f7;
 }
-[data-bs-theme="dark"] {
-  --brand: #9333ea;
-  --brand-dark: #7e22ce;
+
+.text-brand {
+  color: var(--color-brand) !important;
 }
+
 .btn-brand {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: var(--brand);
-  --bs-btn-border-color: var(--brand);
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: var(--brand-dark);
-  --bs-btn-hover-border-color: var(--brand-dark);
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: var(--brand-dark);
-  --bs-btn-active-border-color: var(--brand-dark);
-  --bs-btn-focus-shadow-rgb: 126, 34, 206;
+  background-color: var(--color-brand);
+  color: white;
+  border: none;
+}
+
+.btn-brand:hover {
+  background-color: #9333ea;
+  color: white;
 }
